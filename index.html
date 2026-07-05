@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الفارس للتصميم والاستشارات الهندسية | تصميم معماري وإنشائي</title>
+    <meta name="description" content="الفارس للتصميم والاستشارات الهندسية - مكتب استشاري هندسي متكامل متخصص في التصميم المعماري، المخططات الإنشائية، التصميم الداخلي، والإشراف على التنفيذ في درعا.">
+    <meta name="keywords" content="تصميم معماري, استشارات هندسية, مخططات إنشائية, تصميم داخلي, إشراف تنفيذ, درعا, الفارس">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Tajawal:wght@300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ======== Loader ======== -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-logo">
+                <svg viewBox="0 0 100 100" class="loader-icon">
+                    <polygon points="50,5 95,30 95,70 50,95 5,70 5,30" fill="none" stroke="url(#goldGrad)" stroke-width="2" class="hex-spin"/>
+                    <defs>
+                        <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#c9a84c"/>
+                            <stop offset="100%" style="stop-color:#f0d78c"/>
+                        </linearGradient>
+                    </defs>
+                    <text x="50" y="58" text-anchor="middle" fill="#c9a84c" font-size="28" font-weight="bold" font-family="Cairo">ف</text>
+                </svg>
+            </div>
+            <div class="loader-bar">
+                <div class="loader-bar-fill"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ======== Navigation ======== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <svg viewBox="0 0 50 50" class="nav-logo-icon">
+                    <polygon points="25,2 48,15 48,37 25,50 2,37 2,15" fill="none" stroke="#c9a84c" stroke-width="1.5"/>
+                    <text x="25" y="32" text-anchor="middle" fill="#c9a84c" font-size="18" font-weight="bold" font-family="Cairo">ف</text>
+                </svg>
+                <div class="nav-logo-text">
+                    <span class="nav-logo-name">الفارس</span>
+                    <span class="nav-logo-sub">للتصميم والاستشارات الهندسية</span>
+                </div>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#hero" class="nav-link active">الرئيسية</a>
+                <a href="#about" class="nav-link">من نحن</a>
+                <a href="#services" class="nav-link">خدماتنا</a>
+                <a href="#portfolio" class="nav-link">أعمالنا</a>
+                <a href="#why-us" class="nav-link">لماذا نحن</a>
+                <a href="#contact" class="nav-link nav-link-cta">اتصل بنا</a>
+            </div>
+            <button class="nav-toggle" id="navToggle" aria-label="فتح القائمة">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ======== Hero Section ======== -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="hero-overlay"></div>
+            <div class="hero-particles" id="heroParticles"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge" data-animate="fade-down">
+                <span class="hero-badge-icon">◆</span>
+                <span>مكتب استشاري هندسي متكامل</span>
+            </div>
+            <h1 class="hero-title" data-animate="fade-up">
+                <span class="hero-title-line">حيث يلتقي</span>
+                <span class="hero-title-highlight">الإبداع المعماري</span>
+                <span class="hero-title-line">بالهندسة الإنشائية <span class="hero-title-accent">الموثوقة</span></span>
+            </h1>
+            <p class="hero-description" data-animate="fade-up" data-delay="200">
+                نُحوّل رؤيتك إلى واقع هندسي متكامل — نجمع بين جمال التصميم المعماري ومتانة الحلول الإنشائية
+                لنقدم مشاريع تتجاوز التوقعات من حيث الجودة والأمان والإبداع.
+            </p>
+            <div class="hero-cta" data-animate="fade-up" data-delay="400">
+                <a href="#contact" class="btn btn-primary btn-glow">
+                    <span>اطلب استشارتك الآن</span>
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14M12 5l7 7-7 7"/>
+                    </svg>
+                </a>
+                <a href="#portfolio" class="btn btn-outline">
+                    <span>استعرض أعمالنا</span>
+                </a>
+            </div>
+            <div class="hero-stats" data-animate="fade-up" data-delay="600">
+                <div class="hero-stat">
+                    <span class="hero-stat-number" data-count="150">0</span>
+                    <span class="hero-stat-label">مشروع منجز</span>
+                </div>
+                <div class="hero-stat-divider"></div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number" data-count="12">0</span>
+                    <span class="hero-stat-label">سنة خبرة</span>
+                </div>
+                <div class="hero-stat-divider"></div>
+                <div class="hero-stat">
+                    <span class="hero-stat-number" data-count="30">0</span>
+                    <span class="hero-stat-label">مهندس متخصص</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span>اكتشف المزيد</span>
+            <div class="scroll-arrow">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M12 5v14M5 12l7 7 7-7"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== About Section ======== -->
+    <section class="about section" id="about">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">تعرّف علينا</span>
+                <h2 class="section-title">من <span class="text-gold">نحن</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-content" data-animate="fade-right">
+                    <h3 class="about-subtitle">مكتب الفارس للتصميم والاستشارات الهندسية</h3>
+                    <p class="about-text">
+                        مكتب استشاري هندسي متكامل تأسس برؤية طموحة لتقديم حلول هندسية شاملة تجمع بين 
+                        <strong>الإبداع المعماري</strong> و<strong>الدقة الإنشائية</strong>. يضم فريقنا نخبة من المهندسين 
+                        المعماريين والمدنيين الذين يعملون بتناغم تام لتحويل أفكاركم إلى مشاريع واقعية تتميز 
+                        بالجمال والسلامة والوظيفية.
+                    </p>
+                    <p class="about-text">
+                        نؤمن بأن كل مشروع هو قصة فريدة تستحق أن تُروى من خلال تصميم يعكس هوية صاحبه 
+                        ويحقق أعلى معايير الجودة الهندسية. من الفكرة الأولى وحتى التنفيذ النهائي، نرافقكم 
+                        في كل خطوة بخبرة عميقة والتزام راسخ.
+                    </p>
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <div class="about-feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>سلامة إنشائية</h4>
+                                <p>تصاميم تلتزم بأعلى معايير السلامة والأمان</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="about-feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>إبداع معماري</h4>
+                                <p>تصاميم فريدة تمزج بين الحداثة والأصالة</p>
+                            </div>
+                        </div>
+                        <div class="about-feature">
+                            <div class="about-feature-icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                                    <circle cx="9" cy="7" r="4"/>
+                                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                                    <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>فريق متكامل</h4>
+                                <p>مهندسون معماريون ومدنيون يعملون بتناغم</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual" data-animate="fade-left">
+                    <div class="about-image-wrapper">
+                        <img src="https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=600&h=750&fit=crop" 
+                             alt="فريق العمل الهندسي" class="about-image">
+                        <div class="about-image-accent"></div>
+                        <div class="about-experience-badge">
+                            <span class="experience-number">+12</span>
+                            <span class="experience-text">سنة من الخبرة</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== Services Section ======== -->
+    <section class="services section" id="services">
+        <div class="services-bg-pattern"></div>
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">ماذا نقدم</span>
+                <h2 class="section-title">خدماتنا <span class="text-gold">الهندسية</span></h2>
+                <div class="section-line"></div>
+                <p class="section-desc">نقدم مجموعة شاملة من الخدمات الهندسية المتكاملة التي تغطي جميع مراحل المشروع</p>
+            </div>
+            <div class="services-grid">
+                <!-- Service 1 -->
+                <div class="service-card" data-animate="fade-up" data-delay="0">
+                    <div class="service-card-inner">
+                        <div class="service-icon-wrapper">
+                            <div class="service-icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                                    <polyline points="9 22 9 12 15 12 15 22"/>
+                                </svg>
+                            </div>
+                            <div class="service-number">01</div>
+                        </div>
+                        <h3 class="service-title">التصميم المعماري والواجهات</h3>
+                        <p class="service-desc">
+                            نبتكر تصاميم معمارية فريدة تعكس هوية المشروع وتحقق التوازن المثالي بين الجمال البصري 
+                            والوظيفية العملية. نصمم واجهات عصرية مبتكرة تجمع بين الأصالة والحداثة مع مراعاة البيئة 
+                            المحيطة والمناخ المحلي.
+                        </p>
+                        <ul class="service-features">
+                            <li>تصميم المساقط الأفقية والواجهات</li>
+                            <li>نمذجة ثلاثية الأبعاد (3D)</li>
+                            <li>مخططات تنفيذية معمارية</li>
+                        </ul>
+                        <div class="service-card-glow"></div>
+                    </div>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="service-card" data-animate="fade-up" data-delay="150">
+                    <div class="service-card-inner">
+                        <div class="service-icon-wrapper">
+                            <div class="service-icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                                    <line x1="8" y1="21" x2="16" y2="21"/>
+                                    <line x1="12" y1="17" x2="12" y2="21"/>
+                                    <path d="M6 8h4M6 12h8"/>
+                                </svg>
+                            </div>
+                            <div class="service-number">02</div>
+                        </div>
+                        <h3 class="service-title">المخططات الهندسية والإنشائية</h3>
+                        <p class="service-desc">
+                            نعدّ مخططات إنشائية دقيقة ومتكاملة وفق أحدث المعايير والأكواد الهندسية. يقوم فريقنا من 
+                            المهندسين المدنيين بتصميم الأساسات، العناصر الخرسانية، والهياكل المعدنية لضمان 
+                            أعلى مستويات الأمان والمتانة.
+                        </p>
+                        <ul class="service-features">
+                            <li>تصميم الأساسات والأعمدة والجسور</li>
+                            <li>حساب الأحمال والتحليل الإنشائي</li>
+                            <li>جداول حديد التسليح التفصيلية</li>
+                        </ul>
+                        <div class="service-card-glow"></div>
+                    </div>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="service-card" data-animate="fade-up" data-delay="300">
+                    <div class="service-card-inner">
+                        <div class="service-icon-wrapper">
+                            <div class="service-icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5z"/>
+                                    <path d="M2 17l10 5 10-5"/>
+                                    <path d="M2 12l10 5 10-5"/>
+                                </svg>
+                            </div>
+                            <div class="service-number">03</div>
+                        </div>
+                        <h3 class="service-title">التصميم الداخلي</h3>
+                        <p class="service-desc">
+                            نصمم فضاءات داخلية أنيقة ومريحة تُلهم ساكنيها. نهتم بأدق التفاصيل من اختيار المواد 
+                            والألوان والإضاءة إلى توزيع الأثاث والعناصر الزخرفية، لنخلق بيئات تجمع بين 
+                            الفخامة والراحة والعملية.
+                        </p>
+                        <ul class="service-features">
+                            <li>تصميم الفضاءات السكنية والتجارية</li>
+                            <li>اختيار المواد والتشطيبات</li>
+                            <li>مخططات الإضاءة والأثاث</li>
+                        </ul>
+                        <div class="service-card-glow"></div>
+                    </div>
+                </div>
+
+                <!-- Service 4 -->
+                <div class="service-card" data-animate="fade-up" data-delay="450">
+                    <div class="service-card-inner">
+                        <div class="service-icon-wrapper">
+                            <div class="service-icon">
+                                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                    <polyline points="14 2 14 8 20 8"/>
+                                    <line x1="16" y1="13" x2="8" y2="13"/>
+                                    <line x1="16" y1="17" x2="8" y2="17"/>
+                                    <polyline points="10 9 9 9 8 9"/>
+                                </svg>
+                            </div>
+                            <div class="service-number">04</div>
+                        </div>
+                        <h3 class="service-title">الإشراف على التنفيذ</h3>
+                        <p class="service-desc">
+                            نوفر إشرافاً هندسياً ميدانياً دقيقاً لضمان تنفيذ المشروع وفق المخططات المعتمدة 
+                            وأعلى معايير الجودة. يتابع مهندسونا جميع مراحل البناء لضمان الالتزام بالمواصفات 
+                            والجداول الزمنية المحددة.
+                        </p>
+                        <ul class="service-features">
+                            <li>متابعة ميدانية يومية</li>
+                            <li>ضبط الجودة ومطابقة المواصفات</li>
+                            <li>تقارير دورية عن سير العمل</li>
+                        </ul>
+                        <div class="service-card-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== Portfolio Section ======== -->
+    <section class="portfolio section" id="portfolio">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">إنجازاتنا</span>
+                <h2 class="section-title">معرض <span class="text-gold">أعمالنا</span></h2>
+                <div class="section-line"></div>
+                <p class="section-desc">نفخر بمجموعة متنوعة من المشاريع التي تعكس خبرتنا ودقتنا في التصميم والتنفيذ</p>
+            </div>
+            <div class="portfolio-filter" data-animate="fade-up">
+                <button class="filter-btn active" data-filter="all">الكل</button>
+                <button class="filter-btn" data-filter="architectural">تصميم معماري</button>
+                <button class="filter-btn" data-filter="structural">إنشائي</button>
+                <button class="filter-btn" data-filter="interior">تصميم داخلي</button>
+                <button class="filter-btn" data-filter="residential">سكني</button>
+            </div>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" data-category="architectural" data-animate="fade-up" data-delay="0">
+                    <div class="portfolio-card">
+                        <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=600&h=400&fit=crop" 
+                             alt="فيلا سكنية حديثة" class="portfolio-img" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">تصميم معماري</span>
+                            <h3 class="portfolio-title">فيلا سكنية فاخرة</h3>
+                            <p class="portfolio-info">تصميم ثلاثي الأبعاد • واجهات حديثة</p>
+                            <button class="portfolio-zoom" aria-label="عرض التفاصيل">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
+                                    <line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="structural" data-animate="fade-up" data-delay="100">
+                    <div class="portfolio-card">
+                        <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=600&h=400&fit=crop" 
+                             alt="مبنى تجاري" class="portfolio-img" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">تصميم إنشائي</span>
+                            <h3 class="portfolio-title">مبنى تجاري متعدد الطوابق</h3>
+                            <p class="portfolio-info">مخططات إنشائية • تحليل هيكلي</p>
+                            <button class="portfolio-zoom" aria-label="عرض التفاصيل">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
+                                    <line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="interior" data-animate="fade-up" data-delay="200">
+                    <div class="portfolio-card">
+                        <img src="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=600&h=400&fit=crop" 
+                             alt="تصميم داخلي فاخر" class="portfolio-img" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">تصميم داخلي</span>
+                            <h3 class="portfolio-title">صالة استقبال فاخرة</h3>
+                            <p class="portfolio-info">تصميم داخلي • اختيار مواد</p>
+                            <button class="portfolio-zoom" aria-label="عرض التفاصيل">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
+                                    <line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="residential" data-animate="fade-up" data-delay="300">
+                    <div class="portfolio-card">
+                        <img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=600&h=400&fit=crop" 
+                             alt="مجمع سكني" class="portfolio-img" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">سكني</span>
+                            <h3 class="portfolio-title">مجمع سكني متكامل</h3>
+                            <p class="portfolio-info">ماستر بلان • تصميم معماري وإنشائي</p>
+                            <button class="portfolio-zoom" aria-label="عرض التفاصيل">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
+                                    <line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="architectural" data-animate="fade-up" data-delay="400">
+                    <div class="portfolio-card">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=600&h=400&fit=crop" 
+                             alt="فيلا عصرية" class="portfolio-img" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">تصميم معماري</span>
+                            <h3 class="portfolio-title">فيلا عصرية بحديقة خاصة</h3>
+                            <p class="portfolio-info">تصميم ثلاثي الأبعاد • تنسيق حدائق</p>
+                            <button class="portfolio-zoom" aria-label="عرض التفاصيل">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
+                                    <line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="interior" data-animate="fade-up" data-delay="500">
+                    <div class="portfolio-card">
+                        <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?w=600&h=400&fit=crop" 
+                             alt="مكتب عصري" class="portfolio-img" loading="lazy">
+                        <div class="portfolio-overlay">
+                            <span class="portfolio-category">تصميم داخلي</span>
+                            <h3 class="portfolio-title">مكتب إداري عصري</h3>
+                            <p class="portfolio-info">تصميم داخلي • إضاءة ذكية</p>
+                            <button class="portfolio-zoom" aria-label="عرض التفاصيل">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/>
+                                    <line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== Why Choose Us Section ======== -->
+    <section class="why-us section" id="why-us">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">تميّزنا</span>
+                <h2 class="section-title">لماذا <span class="text-gold">تختارنا</span></h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="why-us-grid">
+                <div class="why-card" data-animate="fade-up" data-delay="0">
+                    <div class="why-card-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                    </div>
+                    <h3 class="why-card-title">الدقة والإتقان</h3>
+                    <p class="why-card-text">
+                        نلتزم بأعلى معايير الدقة في كل مرحلة من مراحل التصميم والتنفيذ. كل خط في مخططاتنا 
+                        مدروس بعناية فائقة لضمان نتائج هندسية لا تقبل الخطأ.
+                    </p>
+                    <div class="why-card-line"></div>
+                </div>
+                <div class="why-card" data-animate="fade-up" data-delay="150">
+                    <div class="why-card-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"/>
+                            <line x1="16" y1="2" x2="16" y2="6"/>
+                            <line x1="8" y1="2" x2="8" y2="6"/>
+                            <line x1="3" y1="10" x2="21" y2="10"/>
+                            <path d="M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01"/>
+                        </svg>
+                    </div>
+                    <h3 class="why-card-title">الالتزام بالمواعيد</h3>
+                    <p class="why-card-text">
+                        نحترم وقتكم كما نحترم جودة عملنا. نعمل وفق جداول زمنية واضحة ومحددة، ونلتزم 
+                        بتسليم المشاريع في المواعيد المتفق عليها دون تأخير.
+                    </p>
+                    <div class="why-card-line"></div>
+                </div>
+                <div class="why-card" data-animate="fade-up" data-delay="300">
+                    <div class="why-card-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                        </svg>
+                    </div>
+                    <h3 class="why-card-title">الإبداع والابتكار</h3>
+                    <p class="why-card-text">
+                        ندمج بين الرؤية الإبداعية المعمارية والمعرفة الهندسية العميقة لابتكار حلول 
+                        تصميمية فريدة تتجاوز المألوف وتحقق تطلعات عملائنا.
+                    </p>
+                    <div class="why-card-line"></div>
+                </div>
+                <div class="why-card" data-animate="fade-up" data-delay="450">
+                    <div class="why-card-icon">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                            <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                            <polyline points="22 4 12 14.01 9 11.01"/>
+                        </svg>
+                    </div>
+                    <h3 class="why-card-title">ضمان الجودة</h3>
+                    <p class="why-card-text">
+                        نطبق نظام مراقبة جودة صارم في جميع مراحل المشروع. من المراجعة التصميمية 
+                        وحتى الإشراف الميداني، نضمن أن كل تفصيل يلبي أعلى المعايير.
+                    </p>
+                    <div class="why-card-line"></div>
+                </div>
+            </div>
+            <!-- Testimonial -->
+            <div class="testimonial-section" data-animate="fade-up">
+                <div class="testimonial-card">
+                    <div class="testimonial-quote">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="currentColor" opacity="0.2">
+                            <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                        </svg>
+                    </div>
+                    <p class="testimonial-text">
+                        "تعاملنا مع مكتب الفارس في تصميم منزلنا وكانت التجربة استثنائية. الفريق أبدع في 
+                        تحويل أفكارنا إلى تصميم يفوق التوقعات — جمع بين الجمال المعماري والسلامة الإنشائية بشكل رائع."
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">أ.ع</div>
+                        <div>
+                            <strong>أحمد العلي</strong>
+                            <span>عميل — مشروع فيلا سكنية</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== Contact Section ======== -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="section-header" data-animate="fade-up">
+                <span class="section-tag">تواصل معنا</span>
+                <h2 class="section-title">اتصل <span class="text-gold">بنا</span></h2>
+                <div class="section-line"></div>
+                <p class="section-desc">نسعد بتواصلكم ونرحب بجميع استفساراتكم — اطلب عرض سعر مجاني لمشروعك</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info" data-animate="fade-right">
+                    <div class="contact-info-card">
+                        <h3 class="contact-info-title">معلومات التواصل</h3>
+                        <p class="contact-info-text">
+                            لا تتردد في التواصل معنا لأي استفسار أو طلب عرض سعر. فريقنا جاهز لمساعدتك 
+                            في تحقيق مشروعك الهندسي.
+                        </p>
+                        <div class="contact-details">
+                            <div class="contact-detail-item">
+                                <div class="contact-detail-icon">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                        <circle cx="12" cy="10" r="3"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4>العنوان</h4>
+                                    <p>درعا، سوريا</p>
+                                </div>
+                            </div>
+                            <div class="contact-detail-item">
+                                <div class="contact-detail-icon">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4>الهاتف</h4>
+                                    <p dir="ltr">0954 364 116</p>
+                                </div>
+                            </div>
+                            <div class="contact-detail-item">
+                                <div class="contact-detail-icon">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <circle cx="12" cy="12" r="10"/>
+                                        <polyline points="12 6 12 12 16 14"/>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4>ساعات العمل</h4>
+                                    <p>السبت - الخميس: 9:00 ص - 5:00 م</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="contact-social">
+                            <a href="#" class="social-link" aria-label="فيسبوك">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link" aria-label="إنستغرام">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="social-link" aria-label="واتساب">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper" data-animate="fade-left">
+                    <form class="contact-form" id="contactForm">
+                        <h3 class="form-title">اطلب عرض سعر مجاني</h3>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name" class="form-label">الاسم الكامل</label>
+                                <input type="text" id="name" name="name" class="form-input" placeholder="أدخل اسمك الكامل" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone" class="form-label">رقم الهاتف</label>
+                                <input type="tel" id="phone" name="phone" class="form-input" placeholder="رقم هاتفك" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="form-label">البريد الإلكتروني</label>
+                            <input type="email" id="email" name="email" class="form-input" placeholder="بريدك الإلكتروني (اختياري)">
+                        </div>
+                        <div class="form-group">
+                            <label for="service" class="form-label">نوع الخدمة المطلوبة</label>
+                            <select id="service" name="service" class="form-input form-select" required>
+                                <option value="" disabled selected>اختر الخدمة</option>
+                                <option value="architectural">التصميم المعماري والواجهات</option>
+                                <option value="structural">المخططات الهندسية والإنشائية</option>
+                                <option value="interior">التصميم الداخلي</option>
+                                <option value="supervision">الإشراف على التنفيذ</option>
+                                <option value="full">مشروع متكامل (تصميم + إشراف)</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="project-details" class="form-label">تفاصيل المشروع</label>
+                            <textarea id="project-details" name="project-details" class="form-input form-textarea" 
+                                      placeholder="صف لنا مشروعك: نوعه، مساحته، موقعه، وأي متطلبات خاصة..." rows="5"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit" id="submitBtn">
+                            <span>إرسال طلب عرض السعر</span>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="22" y1="2" x2="11" y2="13"/>
+                                <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======== Footer ======== -->
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="footer-grid">
+                    <div class="footer-col footer-about">
+                        <div class="footer-logo">
+                            <svg viewBox="0 0 50 50" class="footer-logo-icon">
+                                <polygon points="25,2 48,15 48,37 25,50 2,37 2,15" fill="none" stroke="#c9a84c" stroke-width="1.5"/>
+                                <text x="25" y="32" text-anchor="middle" fill="#c9a84c" font-size="18" font-weight="bold" font-family="Cairo">ف</text>
+                            </svg>
+                            <span class="footer-logo-text">الفارس</span>
+                        </div>
+                        <p class="footer-desc">
+                            مكتب استشاري هندسي متكامل — نجمع بين الإبداع المعماري والدقة الإنشائية 
+                            لتقديم مشاريع تتجاوز التوقعات.
+                        </p>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-title">روابط سريعة</h4>
+                        <ul class="footer-links">
+                            <li><a href="#hero">الرئيسية</a></li>
+                            <li><a href="#about">من نحن</a></li>
+                            <li><a href="#services">خدماتنا</a></li>
+                            <li><a href="#portfolio">أعمالنا</a></li>
+                            <li><a href="#contact">اتصل بنا</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-title">خدماتنا</h4>
+                        <ul class="footer-links">
+                            <li><a href="#services">التصميم المعماري</a></li>
+                            <li><a href="#services">المخططات الإنشائية</a></li>
+                            <li><a href="#services">التصميم الداخلي</a></li>
+                            <li><a href="#services">الإشراف على التنفيذ</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col">
+                        <h4 class="footer-title">تواصل معنا</h4>
+                        <ul class="footer-links footer-contact-links">
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+                                </svg>
+                                درعا، سوريا
+                            </li>
+                            <li>
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                </svg>
+                                <span dir="ltr">0954 364 116</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>© 2026 الفارس للتصميم والاستشارات الهندسية. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="العودة للأعلى">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M12 19V5M5 12l7-7 7 7"/>
+        </svg>
+    </button>
+
+    <!-- Image Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" aria-label="إغلاق">&times;</button>
+        <img src="" alt="" class="lightbox-img" id="lightboxImg">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
